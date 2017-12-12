@@ -1,13 +1,46 @@
-.blue{
+.boxcontainer{
 
-	max-width: 100px;
-	height: 100px;
-	border: 1px blue solid;
-	padding-left: 20px;
-	padding-top: 20px;
-	
-	margin-left: 30px;
-	margin-top: 30px;
+	display: flex;
+	position: absolute;
+
+	background-color: black;
+	width: 200px;
+	height: 70px;
 
 }
 
+.bluebox{
+
+	box-sizing: border-box;
+	position: absolute;
+	top: 50px;
+
+	background-color: blue;
+	color: black;
+	width: 100px;
+	height: 100px;
+}
+
+.greenbox{
+
+	box-sizing: border-box;
+	position: relative;
+	top: 80px;	
+
+
+	background-color: green;
+	color: black;
+	width: 100px;
+	height: 100px;
+}
+
+.yellfowbox{
+
+	box-sizing: border-box;
+	position: ;
+
+	background-color: yellow;
+	color: black;
+	width: 100px;
+	height: 100px;
+}
