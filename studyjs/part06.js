@@ -17,20 +17,29 @@
 Ajax(Asynchronous JavaScript and XML, 에이잭스)는 비동기적인 웹 애플리케이션의 제작
 
 
+
+
+
 # 삽입방법 :
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.0.min.js" ></script>
 
-이렇게 하고 넣어주면 됨
+이렇게 하고 넣어주면 됨!
 
 /
 # 삽입부분 : <head> ~ </head> 사이에 위치한 <script type="text/javascript"> ~ </script>
 
 <script type="text/javascript">
 
-
-
 </script>
+
+//
+<script type="text/javascript"> ~ </script>
+
+//제이쿼리
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.0.min.js"></script>
+
+
 
 
 2. 예제 click 했을 때 무언가 실행하기
@@ -77,15 +86,29 @@ console.log(o.f()); // logs 37
 ==> o.f()가 실행될 때, var o의 값을 참조한다
 
 
+//
 function Person(name, age) {
   this.name = name;
   this.age = age;
 }
 var jihyo = new Person('박지효', 21);
-console.log(hyunseob.name); // 박지효
-console.log(hyunseob.age);  // 21
+console.log(jihyo.name); // 박지효
+console.log(jihyo.age);  // 21
 
+//
+var obj = {  
+  sayName : function() {
+    console.log(this.name);
+  }
+};
 
+var kim = obj;
+kim.name = "kim";
+kim.sayName();   // "kim"
+
+var lee = obj;
+lee.name = "lee";
+lee.sayName();   // "lee"
 
 
 
